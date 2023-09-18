@@ -24,3 +24,16 @@ Content-Type: application/json
     "prompt": "neymar falando, jogador de futebol, paulo henrique ganso"
 }
 
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+    "videoId": "b23192bc-cdf9-4ef3-85bf-773bb2f76c4f",
+    "template": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''",
+    "temperature": 0.5
+}
+
